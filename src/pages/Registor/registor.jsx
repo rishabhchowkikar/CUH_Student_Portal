@@ -30,7 +30,7 @@ export const Registor = (props) => {
   return (
     <div className="auth-form-container">
       <div className="registor_image">
-        <img src={image} alt="image" />
+        <img src={image} alt="regimage" />
       </div>
       <div className="r_from">
         <h2>Welcome to CUH Student Portal</h2>

@@ -1,10 +1,10 @@
 import React from "react";
-import pie from "../../assests/pie-chart (1).png";
+import pie from "../../assests/pie-chart.jpeg";
 import "./chart.css";
 function chart() {
   return (
     <div>
-      <img src={pie} alt="Image" height={250} className="chart" />
+      <img src={pie} alt="chart" height={250} className="chart" />
     </div>
   );
 }

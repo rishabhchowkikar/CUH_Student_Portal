@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { RouterProvider } from "react-router-dom";
 import "./App.css";
 
 import { Registor } from "./pages/Registor/registor";

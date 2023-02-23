@@ -21,6 +21,7 @@ const Login = (props) => {
   const handlepassword = (e) => {
     setPass(e.target.value);
   };
+  console.log(authenticated);
   // const handlenumber = (e) => {
   //   setNumber(e.target.value);
   // };
@@ -43,13 +44,13 @@ const Login = (props) => {
   return (
     <div className="auth-form-container">
       <div className="login_image">
-        <img src={image} alt="image" />
+        <img src={image} alt="logo" />
       </div>
       <div className="log_form">
         <h2>Welcome to CUH Student Portal</h2>
         <h2>Login</h2>
         <form className="login-form" onSubmit={handleSubmit}>
-          <label for="name">Name</label>
+          <label htmlFor="name">Name</label>
           <input
             value={name}
             type="text"
@@ -66,7 +67,7 @@ const Login = (props) => {
             id="number"
             onChange={handlenumber}
           /> */}
-          <label for="password">Password</label>
+          <label htmlFor="password">Password</label>
           <input
             value={pass}
             type="password"

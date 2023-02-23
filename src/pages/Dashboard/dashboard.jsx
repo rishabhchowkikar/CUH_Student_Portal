@@ -31,10 +31,10 @@ const Dashboard = () => {
       <div className="dashboard_container">
         {/* header part */}
         <div className="dashboard_header">
-          <a href="https://www.cuh.ac.in/" target={"_blank"}>
-          <img src={Logo} alt="logo" className="cuh_logo" />
+          <a href="https://www.cuh.ac.in/" target={"blank"}>
+            <img src={Logo} alt="logo" className="cuh_logo" />
           </a>
-          
+
           <div className="dashboard_logout">
             <BellFilled
               className="bell"
@@ -51,7 +51,7 @@ const Dashboard = () => {
         <div className="dashboard_main_section">
           <div className="dashboard_sidebar">
             <div className="dashboard_profile">
-              <img src={Image} alt="image" height={100} width={100} />
+              <img src={Image} alt="dashboard" height={100} width={100} />
               <div className="dash_user">
                 <p>
                   Hello!
@@ -76,28 +76,52 @@ const Dashboard = () => {
                     label: "Academics",
                     icon: <BookOutlined />,
                     children: [
-                      { label: "Student Subject", key: "/dashboard/student-subjects" },
+                      {
+                        label: "Student Subject",
+                        key: "/dashboard/student-subjects",
+                      },
                       { label: "Time Table", key: "/dashboard/time-table" },
                       { label: "Attendence", key: "/dashboard/attendance" },
-                      { label: "General Elective Registration", key: "/dashboard/gec-register" },
+                      {
+                        label: "General Elective Registration",
+                        key: "/dashboard/gec-register",
+                      },
                     ],
                   },
                   {
                     label: "Examination",
                     icon: <PaperClipOutlined />,
                     children: [
-                      { label: "Internal Marks Details", key: "/dashboard/internals" },
-                      { label: "Earlier Marks Details", key: "/dashboard/earlier-marks" },
-                      { label: "Current Semester Result", key: "/dashboard/result" },
-                      { label: "Exam Registration", key: "/dashboard/examform" },
+                      {
+                        label: "Internal Marks Details",
+                        key: "/dashboard/internals",
+                      },
+                      {
+                        label: "Earlier Marks Details",
+                        key: "/dashboard/earlier-marks",
+                      },
+                      {
+                        label: "Current Semester Result",
+                        key: "/dashboard/result",
+                      },
+                      {
+                        label: "Exam Registration",
+                        key: "/dashboard/examform",
+                      },
                     ],
                   },
                   {
                     label: "Hostel",
                     icon: <HomeFilled />,
                     children: [
-                      { label: "Hostel Room Detail", key: "/dashboard/room-details" },
-                      { label: "Instruction Guide", key: "/dashboard/instructions" },
+                      {
+                        label: "Hostel Room Detail",
+                        key: "/dashboard/room-details",
+                      },
+                      {
+                        label: "Instruction Guide",
+                        key: "/dashboard/instructions",
+                      },
                     ],
                   },
                   {
@@ -118,7 +142,7 @@ const Dashboard = () => {
             </div>
           </div>
 
-            {/* outlet */}
+          {/* outlet */}
           <div className="dashboard_outlet">
             <Outlet />
           </div>
